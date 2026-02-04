@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BMA – Bill Manager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', 'Noto Sans Tamil', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    .font-tamil {
+      font-family: 'Noto Sans Tamil', sans-serif;
+    }
+    /* Critical Fix: Force input text to be visible regardless of system theme */
+    input, select, textarea {
+      color: #0f172a !important;
+      background-color: #ffffff !important;
+    }
+    input::placeholder {
+      color: #94a3b8 !important;
+    }
+    /* Hide Scrollbars Utility */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    /* Simple transitions */
+    .page-enter {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    .page-enter-active {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 300ms, transform 300ms;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "react-router": "https://esm.sh/react-router@^7.12.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
