@@ -25,7 +25,7 @@ import {
 import React from 'react';
 import { COLORS as CENTRAL_COLORS } from './colors';
 
-export const API_URL = 'https://script.google.com/macros/s/AKfycbx-ysq1pHcbZgRafjlcH5IIKco4M_pngOxdRJrt-I1HbCtyPHKmjgxS7y27zjKIXE8l3A/exec';
+export const API_URL = 'https://script.google.com/macros/s/AKfycbzda4Jz0iwOTd9V_wjfrNjtXREc8odo5SEtGpFokHkwvtkX3MCRsw4Co0X4iqOVjsfF/exec';
 
 export const COLORS = CENTRAL_COLORS;
 
