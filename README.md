@@ -1,19 +1,41 @@
+# BMA - Bill Manager Application
 
-# BMA – Bill Manager Application
+A modern, fast, and responsive web application for managing shop bills with a Google Sheets backend.
 
-A premium, simplified bill management tool for small business owners in India. Manage shops, track pending payments, and monitor collections with an easy-to-use interface in English and Tamil.
+## 🚀 Quick Start (Local Development)
 
-## Features
+Follow these steps to run the project on your machine:
 
-- **Shop Management**: Add and manage multiple shops.
-- **Bill Tracking**: Track pending and paid bills with detailed line items.
-- **Dashboard**: Visual overview of total collections and pending amounts.
-- **Multi-language Support**: English and Tamil.
-- **Filtering & Sorting**: Advanced filters for dates, amounts, and status.
+### 1. Prerequisites
+Ensure you have [Node.js](https://nodejs.org/) (v18 or higher) and [npm](https://www.npmjs.com/) installed.
 
-## Tech Stack
+### 2. Install Dependencies
+Open your terminal in the project folder and run:
+```bash
+npm install
+```
 
-- **Frontend**: React 19, TypeScript, Tailwind CSS
-- **Icons**: Lucide React
-- **Routing**: React Router v7
-- **State Management**: React Context API
+### 3. Run Development Server
+Start the app locally:
+```bash
+npm run dev
+```
+Once it starts, open [http://localhost:3000/BMA/](http://localhost:3000/BMA/) in your browser.
+
+---
+
+## 🛠️ Key Commands
+
+- `npm run dev`: Starts the local development server.
+- `npm run build`: Builds the project for production.
+- `npm run preview`: Previews the production build locally.
+
+---
+
+## 📂 Project Highlights
+- **Fast Search**: Uses debouncing to handle large lists of shops smoothly.
+- **Smart Loading**: Caches data locally for instant startup.
+- **Google Sheets Integration**: Easy management of data without a complex database.
+
+For instructions on how to set up the Google Sheets backend and GitHub deployment, please refer to:
+👉 [deployment-steps.md](./deployment-steps.md)
